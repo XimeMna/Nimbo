@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar</title>
+    <link rel="stylesheet" href="CssDescargar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <a href="index.html"><img src="Imagenes/icon.jpg" class="icono"></a>
+        <a href="index.html"><label class="nimbo"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Nimbo</b></label></a>
+        <a href="Descargar.html"><label class="descargar">Descargar</label></a>
+        <a href="Comentarios.html"><label class="comentarios">Comentarios</label></a>
+        <a href="Formulario.html"><button class="boton"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Entrar</b></button></a>
+    </header>
+
+    <img src="Imagenes/icon1.png" class="icon">
+
+    <div class="contenedor">
+        
+        <button class="bDescargar" onclick="descargar()"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Descargar</b></button>
+    
+    </div>
+
+    <script>
+        function descargar(){
+            var apkUrl = 'nimbo.apk';
+            window.open(apkUrl, '_system');
+        }
+    </script>
+    
+</body>
+</html>

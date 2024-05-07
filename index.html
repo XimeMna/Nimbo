@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbo</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="click" src="musica.mp3"></audio>
+    <div class="vertical">
+        <img src="Imagenes/icon.jpg" id="icono">
+        <label>Voltea tu tablet</label>
+        <img src="Imagenes/pantalla-tactil.gif" id="gif">
+      </div>
+    <header> 
+        <a href="index.html"><img src="Imagenes/icon.jpg" class="icono"></a>
+        <a href="index.html"><label class="nimbo"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Nimbo</b></label></a>
+        <a href="Descargar.html"><label class="descargar">Descargar</label></a>
+        <a href="Comentarios.html"><label class="comentarios">Comentarios</label></a>
+        <img class="sonido" onclick="musica()" ondblclick="apagarmusica()" src="Imagenes/altavoz.png">
+        <a href="Formulario.html"><button class="boton"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Entrar</b></button></a>
+    </header>
+
+    <div class="aviso" id="aviso" >
+        <div class="alerta">
+            <img src="Imagenes/advertencia.png" width="80%">
+        </div>
+        <p>Pon el cursor en las tarjetas para desifrar su información</p>
+        <img src="Imagenes/deslizar-hacia-abajo.gif" class="gif">
+        <button onclick="aceptar()">Entiendo</button>
+    </div>
+    <div class="aviso" id="aviso2">
+        <div class="alerta">
+            <img src="Imagenes/advertencia.png" width="80%">
+        </div>
+        <p>Dale un toque las tarjetas para desifrar su información</p>
+        <img src="Imagenes/toque-de-dedo.gif" class="gif">
+        <button onclick="aceptar2()">Entiendo</button>
+    </div>
+
+    <div class="sombreado" id="capa">
+
+    </div>
+    
+    <div class="principal">
+        <div class="que_son">
+                <div class="cartas">
+                    <div class="adelante">
+                        <img src="Imagenes/pregunta.png">
+                        <h1>¿Qué son las flashcards?</h1>
+                    </div>
+                    <div class="atras">
+                        <img src="Imagenes/signo-de-interrogacion.png" class="img_cont">
+                        <ul>
+                            <li><b>¿Qué son?</b> Son tarjetas con información corta y fácil de recordar.</li>
+                            <br>
+                            <li> <b>¿Para qué sirven?</b> Ayudan a aprender cosas nuevas de forma rápida y divertida.</li>
+                            <br>
+                            <li><b>Ejemplo:</b> Imagina que estás aprendiendo palabras en otro idioma. Con flashcards, puedes escribir la palabra en un lado y su significado en el otro.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <img id="icon" src="Imagenes/icon.jpg">
+
+    <a href="Formulario.html"><button id="entrar"><b style="cursor: url('Imagenes/cursor-dedo.png'), auto;">Comenzar</b></button></a>
+    <img id="cards" src="Imagenes/cards.png">
+
+    <div class="contenedor1">
+        <div class="obj_ben">
+            <div class="objetivos">
+                <div class="cartas">
+                    <div class="adelante">
+                        <img src="Imagenes/bombilla.png">
+                        <h1>¿Cuál es su objetivo?</h1>
+                    </div>
+                    <div class="atras">
+                       <img src="Imagenes/meta.png" class="img_cont">
+                       
+                       <ul><br><br>
+                        <li>El objetivo de las tarjetas es facilitar el aprendizaje y la memorización mediante conceptos clave en un formato simple y fácil de revisar.</li>
+                    </div>
+                </div>
+            </div>
+            <div class="beneficios">
+                <div class="cartas">
+                    <div class="adelante">
+                        <img src="Imagenes/voto-positivo.png">
+                        <h1>¿Tiene Beneficios?</h1>
+                    </div> 
+                    <div class="atras">
+                        <img src="Imagenes/insignias.png" class="img_cont">
+                        <ul><br><br>
+                            <li>Mejoran la memoria.</li>
+                            <li>Facilitan el aprendizaje.</li>
+                            <li>Ayudan a repasar de manera efectiva.</li>
+                            <li>Incrementan la motivación.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <video src="Imagenes/Nimbo.mp4" autoplay loop muted></video>
+
+    
+    </div>
+    
+    <div class="contenedor2">
+        <h1>Todos los temas que quieras...</h1>
+        <div class="temas">
+        <div class="geografia">
+            <img src="Imagenes/geografia.png">
+            <label>Geografía</label>
+        </div>
+        <div class="programacion">
+            <img src="Imagenes/programador.png">
+            <label>Programación</label>
+        </div>
+        <div class="ciencia">
+            <img src="Imagenes/ciencias.png">
+            <label>Ciencia</label>
+        </div>
+        <div class="ingles">
+            <img src="Imagenes/eng.png">
+            <label>Inglés</label>
+        </div>
+        </div>
+    </div>
+
+    <div class="contenedor3">
+        <div class="tarjetas">
+            <div class="cartas">
+                <div class="adelante">
+                    <h1>Elefante</h1>
+                </div>
+                <div class="atras">
+                    <img src="Imagenes/elefante.png" class="img_cards">
+                    <p>Mamífero terrestre de gran tamaño, caracterizado por su trompa larga y orejas grandes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tarjetas">
+            <div class="cartas">
+                <div class="adelante">
+                    <h1>Fotosíntesis</h1>
+                </div>
+                <div class="atras">
+                    <img src="Imagenes/fotosintesis.png" class="img_cards">
+                    <p>Proceso mediante el cual las plantas, algas y algunas bacterias convierten la luz solar en energía química para producir su propio alimento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tarjetas">
+            <div class="cartas">
+                <div class="adelante">
+                    <h1>Inteligencia Artificial<br> (IA)</h1>
+                </div>
+                <div class="atras">
+                    <img src="Imagenes/asistente-virtual.png" class="img_cards">
+                    <p>Informática que desarrolla sistemas capaces de realizar actividades que hace la gente, como reconocer la voz, tomar decisiones y aprender automáticamente.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div> 
+
+    <footer>
+        <h1>- NIMBO -</h1>
+        <div class="cont_contacto">
+            <div class="ig">
+                <img src="Imagenes/instagram.png">
+            </div>
+            <div class="ig">
+                <img src="Imagenes/facebook_.png">
+            </div>
+            <div class="ig">
+                <img src="Imagenes/google_.png">
+            </div>
+            <div class="ig">
+                <img src="Imagenes/twitter.png">
+            </div>
+            <div class="ig">
+                <img src="Imagenes/youtube.png">
+            </div>
+        </div>
+        <p>&copy; 2024 Nimbo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Archivo.js"></script>
+    <script>
+        function apagarmusica(){
+            var audio = document.getElementById("click")
+            audio.pause();
+        }
+
+        function musica(){
+            var audio = document.getElementById("click")
+            audio.play();
+        }
+        function aceptar (){
+            var aceptar = document.getElementById('aviso');
+            var sombreado = document.getElementById('capa');
+            sombreado.style.display = "none";
+            aceptar.style.display = "none";
+            
+        }
+        function aceptar2 (){
+            var aceptar = document.getElementById('aviso2');
+            var sombreado = document.getElementById('capa');
+            sombreado.style.display = "none";
+            aceptar.style.display = "none";
+            
+        }
+    </script>
+</body>

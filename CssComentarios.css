@@ -1,0 +1,351 @@
+*{
+    cursor: url('Imagenes/cursor.png'), auto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    zoom: 100%;
+    background-color: #eee;
+    zoom: 75%;
+    font-family: "Fredoka", sans-serif;
+}
+
+header{
+    background-color: #625BB2;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+} 
+
+.icono{
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+.nimbo{
+    position: absolute;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    top: 23px;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+.descargar{
+    position: absolute;
+    left: 25%;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    top: 20px;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+
+.comentarios{
+    position: absolute;
+    left: 35%;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    top: 20px;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+.boton{
+    position: absolute;
+    right: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: #FFC500;
+    border: solid 5px  #FFC500;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+    top: 15px;
+}
+
+.icon{
+    position: absolute;
+    width: 250px;
+    z-index: 2;
+    border-radius: 200px;
+    top: 8%;
+    left: 1%;
+    border: #625BB2 solid 10px;
+}
+
+.contenedor{
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    background-color: #625BB2;
+    top: 12%;
+    border-radius: 100px;
+    left: 2.5%;
+}
+
+.b_descargar{
+    position: absolute;
+    background-color: #FFC500;
+    border-radius: 10px;
+    right: 5%;
+    top: 5%;
+    width: 12%;
+    height: 6%;
+    border: solid #FFC500 10px;
+    color: #fff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+.cont_com{
+    position: absolute;
+    width: 75%;
+    height: 45%;
+    top: 40%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between; 
+}
+
+.coment{
+    position: relative;
+    height: 90%;
+    width: 18%;
+}
+
+.caja_c{
+    position: absolute;
+    background-color: #2D3250;
+    width: 42%;
+    height: 22%;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+
+}
+.caja_c input{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-0%,-50%);
+    width: 45%;
+    height: 30%;
+    border-radius: 10px;
+    border: solid #fff 10px;
+    outline: none; 
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    text-align: left;
+    cursor: url('Imagenes/cursor-texto.png'), auto;
+}
+.caja_c button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #474286;
+    border: 10px #474286 solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    top: 50%;
+    right: 7%;
+    transform: translate(-7%,-50%);
+    cursor: url('Imagenes/cursor-dedo.png'), auto;
+}
+
+.cartas{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1.2s;
+}
+.cartas:hover{
+    transform: rotateY(180deg);
+}
+.adelante{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    -moz-box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.atras{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    -moz-box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    box-shadow: 30px 30px 30px -10px rgba(54,54,54,0.79);
+    position: absolute;
+    backface-visibility: hidden;
+
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.fotos{
+    border-radius: 30px 30px 150px 40px;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #474286;
+}
+.foto{
+    background-color: #fff;
+    position: absolute;
+    width: 22vh;
+    height: 22vh;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+.foto img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.nombre{
+    font-size: 25px;
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Fredoka", sans-serif;
+} 
+
+#enviado {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dfab00;
+    border-radius: 50px;
+    display: none;
+}
+
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+@keyframes wipe-out-left {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+    to {
+      clip-path: inset(0 100% 0 0);
+    }
+  }
+  
+  [transition-style="out:wipe:left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-left both;
+  }
+
+#enviado img{
+    width: 12vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+}
+#enviado label{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 18%;
+    font-size: 30px;
+}
+#a {
+    display: block;
+}
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1334px) and (orientation: portrait) {
+    .icono{
+        width: 70px;
+    }
+    .nimbo{
+        font-size: 25px;
+        top: 25px;
+    }
+    .descargar{
+        top: 30px;
+    }
+    .comentarios{
+        top: 30px;
+        left: 40%;
+    }
+    .boton{
+        top: 25px;
+    }
+    .b_descargar{
+        width: 20%;
+    }
+    .cont_com{
+        width: 90%;
+    }
+    .caja_c{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1334px) and (orientation: landscape){
+    .icono{
+        margin-top: 6px;
+    }
+    .nimbo{
+        top: 18px;
+    }
+    .descargar,.comentarios{
+        top: 15px;
+    }
+    .boton{
+        top: 10px;
+    }
+    .icon{
+        width: 200px;
+    }
+    .b_descargar{
+        font-size: 20px;
+    }
+    .caja_c{
+        width: 50%;
+    }
+    .coment{
+        width: 20%;
+    }
+}

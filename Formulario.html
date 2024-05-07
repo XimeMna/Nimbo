@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CssFormulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tarjetas" id="cards">
+        <div class="cartas">
+            <div class="entrar_">
+                <div class="titulos">
+                    <h1>Entrar</h1>
+                </div>
+                <div class="cuadro">
+                <div id="enviado">
+                    <img src="Imagenes/aceptar1.png">
+                    <label>Ingresado con exito!</label>
+                </div>
+                <div id="a"> 
+                    <div>
+                        <label class="correo">Correo Electronico</label> <br>
+                        <input type="email" id="email">
+                    </div>
+                    
+                    <br>
+                    <div>
+                        <label class="contra">Contraseña</label> <br>
+                        <input type="password" id="pass"> 
+                    </div>
+                    <a href="#" class="recuperarpass">¿Olvidaste tu Contraseña?</a>
+                    <button class="entrar">
+                        <h2 class="boton" onclick="entrar()">Siguiente</h2>
+                    </button>
+                </div>
+                </div>
+                </div>
+
+                <!-- separado -->
+
+                <div class="registrar_">
+                    <div class="titulos">
+                        <h1>Registrar</h1>
+                    </div>
+                    <div class="cuadro">
+                    <div id="enviado1">
+                        <img src="Imagenes/aceptar1.png">
+                        <label>Registrado con exito!</label>
+                    </div>
+                    <div id="a1"> 
+                        <div>
+                            <label class="correo_r">Correo Electronico</label> <br>
+                            <input type="email" id="email_r">
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <label class="contra_r">Contraseña</label> <br>
+                            <input type="password" id="pass_r"> 
+                        </div>
+                        
+                        <div class="vincular">
+                            <img src="Imagenes/google.png">
+                            <img src="Imagenes/facebook.png" style="position: absolute;right: 0%;">
+                        </div>
+                        
+                        <button class="entrar" onclick="registrar()">
+                            <h2 class="boton">Siguiente</h2>
+                        </button>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+    <!-- inicia el boton -->
+    <div class="voltear" onclick="voltear()">
+        <h2>Girar</h2>
+    </div>
+    <!-- <script src="Archivo.js"></script> -->
+    <script>
+        
+        function voltear() {
+          var card = document.getElementById('cards');
+          card.classList.toggle('girar');
+        }
+
+        var enviado = document.getElementById("enviado");
+        var a = document.getElementById("a");
+
+        function entrar() {
+            var email = document.getElementById("email").value.trim();
+            var pass = document.getElementById("pass").value.trim();
+
+                if (email === '' || pass === '') {
+                if (email === '') {
+                    document.getElementById("email").classList.add('campo-invalido');
+                }
+                if (pass === '') {
+                    document.getElementById("pass").classList.add('campo-invalido');
+                }
+                return; 
+            }
+
+            var enviado = document.getElementById("enviado");
+            var a = document.getElementById("a");
+
+            a.style.display = "none";
+            enviado.style.animation = "2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both";
+            enviado.style.display = "block";
+
+            setTimeout(function() {
+                enviado.style.animation = "2.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both";
+                setTimeout(function() {
+                    reversa();
+                }, 1000); 
+            }, 2500);
+        }
+
+        function reversa(){
+            a.style.display = "block";
+            enviado.style.display = "none";
+            window.location.href ="https://ximemna.github.io/NimboApp/";
+        }
+
+
+
+        
+        var enviado1 = document.getElementById("enviado1");
+        var a1 = document.getElementById("a1");
+
+        function registrar() {
+            var email_r = document.getElementById("email_r").value.trim();
+            var pass_r = document.getElementById("pass_r").value.trim();
+
+            if (email_r === '' || pass_r === '') {
+            if (email_r === '') {
+                document.getElementById("email_r").classList.add('campo-invalido');
+            }
+            if (pass_r === '') {
+                document.getElementById("pass_r").classList.add('campo-invalido');
+            }
+            return; 
+        }
+
+            var enviado1 = document.getElementById("enviado1");
+            var a1 = document.getElementById("a1");
+
+            a1.style.display = "none";
+            enviado1.style.animation = "2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center both";
+            enviado1.style.display = "flex";
+
+            setTimeout(function() {
+                enviado1.style.animation = "2.5s cubic-bezier(.25, 1, .30, 1) circle-out-center both";
+                setTimeout(function() {
+                    reversa1();
+                }, 1000); 
+            }, 2500);
+        }
+
+        function reversa1(){
+            a1.style.display = "block";
+            enviado1.style.display = "none";
+            window.location.href ="https://ximemna.github.io/NimboApp/";
+        }
+
+
+    </script>
+
+</body>
+</html>
